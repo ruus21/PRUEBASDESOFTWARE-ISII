@@ -1,0 +1,55 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.3.5, pluggy-1.6.0 -- C:\Users\gasto\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\gasto\OneDrive\Documentos\ChatGPT\TP A las apuradas\TP1_Puntos_1_2_3
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 44 items
+
+tests/test_etapa_1.py::test_atributos_producto_base PASSED               [  2%]
+tests/test_etapa_1.py::test_tienda_base_vacia PASSED                     [  4%]
+tests/test_etapa_1.py::test_agregar_base PASSED                          [  6%]
+tests/test_etapa_1.py::test_buscar_base[Arroz] PASSED                    [  9%]
+tests/test_etapa_1.py::test_buscar_base[Leche] PASSED                    [ 11%]
+tests/test_etapa_1.py::test_buscar_base_inexistente[True] PASSED         [ 13%]
+tests/test_etapa_1.py::test_buscar_base_inexistente[False] PASSED        [ 15%]
+tests/test_etapa_1.py::test_eliminar_base[Arroz-Leche] PASSED            [ 18%]
+tests/test_etapa_1.py::test_eliminar_base[Leche-Arroz] PASSED            [ 20%]
+tests/test_etapa_1.py::test_eliminar_base_inexistente[True] PASSED       [ 22%]
+tests/test_etapa_1.py::test_eliminar_base_inexistente[False] PASSED      [ 25%]
+tests/test_producto.py::test_atributos PASSED                            [ 27%]
+tests/test_producto.py::test_actualizar_precio_valido[0] PASSED          [ 29%]
+tests/test_producto.py::test_actualizar_precio_valido[0.01] PASSED       [ 31%]
+tests/test_producto.py::test_actualizar_precio_valido[750] PASSED        [ 34%]
+tests/test_producto.py::test_actualizar_precio_valido[1250.5] PASSED     [ 36%]
+tests/test_producto.py::test_precio_invalido_conserva_estado[-0.01] PASSED [ 38%]
+tests/test_producto.py::test_precio_invalido_conserva_estado[-100] PASSED [ 40%]
+tests/test_producto.py::test_precio_invalido_conserva_estado[nan] PASSED [ 43%]
+tests/test_producto.py::test_precio_invalido_conserva_estado[inf] PASSED [ 45%]
+tests/test_producto.py::test_precio_invalido_conserva_estado[-inf] PASSED [ 47%]
+tests/test_producto.py::test_tipo_precio_invalido[100] PASSED            [ 50%]
+tests/test_producto.py::test_tipo_precio_invalido[None] PASSED           [ 52%]
+tests/test_producto.py::test_tipo_precio_invalido[True] PASSED           [ 54%]
+tests/test_producto.py::test_constructor_rechaza_negativo PASSED         [ 56%]
+tests/test_tienda.py::test_inventarios_independientes PASSED             [ 59%]
+tests/test_tienda.py::test_inexistente_lanza_excepcion[True-buscar_producto] PASSED [ 61%]
+tests/test_tienda.py::test_inexistente_lanza_excepcion[True-eliminar_producto] PASSED [ 63%]
+tests/test_tienda.py::test_inexistente_lanza_excepcion[False-buscar_producto] PASSED [ 65%]
+tests/test_tienda.py::test_inexistente_lanza_excepcion[False-eliminar_producto] PASSED [ 68%]
+tests/test_tienda.py::test_descuento_con_mock[0-1000] PASSED             [ 70%]
+tests/test_tienda.py::test_descuento_con_mock[0.01-999.9] PASSED         [ 72%]
+tests/test_tienda.py::test_descuento_con_mock[20-800] PASSED             [ 75%]
+tests/test_tienda.py::test_descuento_con_mock[99.99-0.1] PASSED          [ 77%]
+tests/test_tienda.py::test_descuento_con_mock[100-0] PASSED              [ 79%]
+tests/test_tienda.py::test_descuento_fuera_de_rango[-0.01] PASSED        [ 81%]
+tests/test_tienda.py::test_descuento_fuera_de_rango[100.01] PASSED       [ 84%]
+tests/test_tienda.py::test_descuento_fuera_de_rango[nan] PASSED          [ 86%]
+tests/test_tienda.py::test_descuento_fuera_de_rango[inf] PASSED          [ 88%]
+tests/test_tienda.py::test_descuento_tipo_invalido[20] PASSED            [ 90%]
+tests/test_tienda.py::test_descuento_tipo_invalido[None] PASSED          [ 93%]
+tests/test_tienda.py::test_descuento_tipo_invalido[True] PASSED          [ 95%]
+tests/test_tienda.py::test_descuento_inexistente PASSED                  [ 97%]
+tests/test_tienda.py::test_busqueda_distingue_mayusculas PASSED          [100%]
+
+- generated xml file: C:\Users\gasto\OneDrive\Documentos\ChatGPT\TP A las apuradas\TP1_Puntos_1_2_3\evidencias\resultados.xml -
+============================= 44 passed in 0.72s ==============================
